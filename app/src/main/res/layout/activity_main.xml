@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/d1">
+
+
+    <!-- In that create title  -->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to Juice shop "
+        android:textColor="#ff0000"
+        android:textSize="20dp">
+
+    </TextView>
+
+</LinearLayout>
+
+
+
+    <!-- In that create checkbox to get user input  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk1"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="lemon Juice"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="#00ff00"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk2"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Cocoa Juice"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#ff00ff"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk3"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Milkshake"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#800080"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk4"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Fruit Juice"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#808000"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk5"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Orange Juice"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#008080"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk6"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Smoothie"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#2F4F4F"/>
+
+    </LinearLayout>
+
+
+
+
+    <!-- In that create ADD, Refresh, Reset Button  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ff1493"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:text="Refresh"
+            android:backgroundTint="#ffff00"
+            android:textColor="#000000"/>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:text="Reset"
+            android:backgroundTint="#000000"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+
+
+
+    <!-- In that create place to display Total Amount of bill  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="#800000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:ems="10"
+            android:textSize="26sp"
+            android:id="@+id/txttot"/>
+    </LinearLayout>
+
+
+
+
+    <!-- In that create table to display the bill  -->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="360dp"
+           android:id="@+id/tb1"
+           android:stretchColumns="*">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbrow"
+            android:backgroundTint="#ee82ee">
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textStyle="bold"
+                android:id="@+id/t1"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:id="@+id/t2"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textStyle="bold"
+                android:id="@+id/t3"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textStyle="bold"
+                android:id="@+id/t4"/>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

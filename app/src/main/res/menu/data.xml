@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Create item in navigation bar -->
+
+    <item android:id="@+id/it1"
+        android:title="Database"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/it2"
+        android:title="Guide"
+        app:showAsAction="never" />
+
+
+
+
+
+</menu>

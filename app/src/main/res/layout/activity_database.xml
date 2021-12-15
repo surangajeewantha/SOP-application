@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Database"
+    android:padding="10dp"
+    android:background="@drawable/d2">
+
+
+
+    <!-- In that create title  -->
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the details below"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+
+    <!-- In that create space to get user input  -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:hint="Name"
+        android:textSize="23sp"
+        android:layout_below="@+id/tex"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tot"
+        android:hint="Total Amount"
+        android:textSize="23sp"
+        android:layout_below="@+id/id"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/dat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:textSize="23sp"
+        android:layout_below="@+id/tot"
+        android:inputType="number"/>
+
+
+
+    <!-- In that create button to insert, update, delete, view data in database. In that delete existing data  -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnins"
+        android:text="Insert"
+        android:textSize="23sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/dat"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnups"
+        android:text="Update"
+        android:textSize="23sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnins"
+        android:backgroundTint="@color/black"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndel"
+        android:text="Delete"
+        android:textSize="23sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnups"
+        android:backgroundTint="#ff0000"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnvei"
+        android:text="View"
+        android:textSize="23sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btndel"
+        android:backgroundTint="#ff1493"
+        />
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
